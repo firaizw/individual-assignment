@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shafira's Page</title>
+    <style>
+        body {
+            font-family: ,sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: violet;
+        }
+        header {
+            background: purple;
+            color: floralwhite;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: floralwhite;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: violet;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            background-color: floralwhite;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .profile-pic {
+            width: 150px; /* Adjust size as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make it circular */
+            margin-top: 20px;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .portfolio-item {
+            background-color: #eaeaea;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: calc(33% - 10px); /* Three items per row with some spacing */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden; /* Prevent overflow */
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto; /* Maintain aspect ratio */
+        }
+        .portfolio-item h3 {
+            margin: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: purple;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: calc(50% - 10px); /* Two items per row on smaller screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .portfolio-item {
+                width: calc(100% - 10px); /* One item per row on very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="entertainment.html">Entertainment</a>
+</nav>
+
+<header>
+    <h1>Shafira's Page</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#mybiodata">My Biodata</a>
+        <a href="#social-media">Social Media</a>
+
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+	<center>
+     <img src="img/picture1.jpg" alt="Shafira" class="profile-pic w3-circle">
+    <p>Hello! I'm Shafira izwani, a diploma student from UiTM Kedah. This website showcases about my personal profile.</p>
+	</center>
+</section>
+
+<section id="mybiodata">
+    <h2>My Biodata</h2>
+    <div class="biodata">
+    <ul>
+        <li><span class="label">Name:</span> Shafira Izwani Mustapa Kama</li>
+        <li><span class="label">Date of Birth:</span> May 11, 2003</li>
+        <li><span class="label">Email:</span> shafira.email@gmail.com</li>
+        <li><span class="label">Phone:</span> 019-12345678</li>
+        <li><span class="label">Address:</span> Perak, Malaysia</li>
+        
+        <li><span class="label">Education:</span></li>
+        <ul>
+            <li>Secondary School - SMK, Batu 10 (2021)</li>
+            <li>Diploma in Information Management - Universiti Teknologi MARA (2022)</li>
+        </ul>
+
+        <li><span class="label">Hobbies:</span></li>
+        <ul>
+            <li>Reading Books</li>
+            <li>Listening to music</li>
+            <li>Writing</li>
+        </ul>
+    </ul>
+</div>
+</section>
+
+<section id="social-media" class="social-media">
+    <h2>Connect with Me on:</h2>
+	<ul>
+    <li><a href="https://www.facebook.com/share/1UgAa6WD37/?mibextid=LQQJ4d" class="facebook" target="_blank">Facebook</a></li>
+    <li><a href="https://x.com/fieraizw?s=21" class="twitter" target="_blank">Twitter</a></li>
+    <li><a href="https://www.instagram.com/firaizwa/profilecard/?igsh=MTNtNmprcnF1Y2NmZA==" class="instagram" target="_blank">Instagram</a></li>
+	</ul>
+</section>
+
+<footer>
+    <p>&copy; Fira 2024. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
